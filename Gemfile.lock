@@ -176,6 +176,8 @@ GEM
       globalize3 (~> 0.1)
       refinerycms-core (= 1.0.3)
       seo_meta (~> 1.1)
+    refinerycms-portfolio (0.9.9)
+      refinerycms (>= 0.9.8)
     refinerycms-resources (1.0.3)
       dragonfly (~> 0.9.0)
       rack-cache (>= 0.5.3)
@@ -241,4 +243,5 @@ DEPENDENCIES
   refinerycms (~> 1.0.3)
   refinerycms-blog!
   refinerycms-i18n (~> 1.0.0)
+  refinerycms-portfolio (~> 0.9.9)
   refinerycms-testing (~> 1.0.1)

@@ -63,5 +63,8 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'refinerycms-blog', :git => 'https://github.com/resolve/refinerycms-blog.git',
                         :ref => 'bbfc87e4d999d9b94c3e'
 
+# PORTFOLIOS
+gem 'refinerycms-portfolio', '~> 0.9.9'
+
 # END USER DEFINED
 
