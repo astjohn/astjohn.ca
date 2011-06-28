@@ -57,8 +57,11 @@ end
 gem 'refinerycms-i18n',         '~> 1.0.0'
 
 # BLOG
-gem 'refinerycms-blog', '~> 1.6.1'
-
+#gem 'refinerycms-blog', '~> 1.6.1'
+# 2011-06-28 - needed for fix on tags
+# https://github.com/resolve/refinerycms-blog/issues/80
+gem 'refinerycms-blog', :git => 'https://github.com/resolve/refinerycms-blog.git',
+                        :ref => 'bbfc87e4d999d9b94c3e'
 
 # END USER DEFINED
 

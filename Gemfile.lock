@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/resolve/refinerycms-blog.git
+  revision: bbfc87e4d999d9b94c3e301d638d97f5b21a223b
+  ref: bbfc87e4d999d9b94c3e
+  specs:
+    refinerycms-blog (1.6.2)
+      acts-as-taggable-on
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 1.0.0)
+      seo_meta (~> 1.1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -138,11 +149,6 @@ GEM
       friendly_id_globalize3 (~> 3.2.1)
       refinerycms-core (= 1.0.3)
     refinerycms-base (1.0.3)
-    refinerycms-blog (1.6.1)
-      acts-as-taggable-on
-      filters_spam (~> 0.2)
-      refinerycms-core (~> 1.0.0)
-      seo_meta (~> 1.1.0)
     refinerycms-core (1.0.3)
       acts_as_indexed (~> 0.7)
       awesome_nested_set (~> 2.0)
@@ -233,6 +239,6 @@ PLATFORMS
 DEPENDENCIES
   mysql2 (~> 0.2.7)
   refinerycms (~> 1.0.3)
-  refinerycms-blog (~> 1.6.1)
+  refinerycms-blog!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-testing (~> 1.0.1)
