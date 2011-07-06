@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/resolve/refinerycms-blog.git
-  revision: bbfc87e4d999d9b94c3e301d638d97f5b21a223b
-  ref: bbfc87e4d999d9b94c3e
+  revision: 8aad45e5b04121a63760edec98fb2205a9111b48
+  ref: 8aad45e5b04121a63760
   specs:
     refinerycms-blog (1.6.2)
       acts-as-taggable-on
       filters_spam (~> 0.2)
-      refinerycms-core (~> 1.0.0)
+      refinerycms-core (~> 1.0.3)
       seo_meta (~> 1.1.0)
 
 GEM

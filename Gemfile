@@ -61,7 +61,7 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # 2011-06-28 - needed for fix on tags
 # https://github.com/resolve/refinerycms-blog/issues/80
 gem 'refinerycms-blog', :git => 'https://github.com/resolve/refinerycms-blog.git',
-                        :ref => 'bbfc87e4d999d9b94c3e'
+                        :ref => '8aad45e5b04121a63760'
 
 # PORTFOLIOS
 gem 'refinerycms-portfolio', '~> 0.9.9'

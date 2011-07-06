@@ -61,3 +61,4 @@
   <%= raw sections.map{|section| section[:html]}.join("\n") -%>
 </section>
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
+

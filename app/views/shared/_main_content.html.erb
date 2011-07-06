@@ -1,6 +1,7 @@
 <div class="layout" id="main">
-  <section class="layout" id="content">
-    <%= yield %>
+  <section class="layout" id="body_content_left">
+    <%= raw @page[:body] %>
+    <%= yield :body_content_left %>
   </section>
   <section class="layout" id="sidebar">
     <nav id="main_menu">
@@ -11,6 +12,10 @@
         <li><a href="#"><div class="menu_backpack"></div></a></li>
       </ul>
     </nav>
+    <section id='body_content_right'>
+      <%= raw @page[:side_body] %>
+      <%= yield :body_content_right %>
+    </section>
   </section>
 </div>
 
