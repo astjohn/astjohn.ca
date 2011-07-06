@@ -5,38 +5,127 @@
 
 @import url('refinery/application.css');
 
-body {
-  background: #DDD;
-  font-family: Verdana;
-  font-size: 13px;
-  line-height: 18px;
-}
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {font: 13px Helmet, Freesans, sans-serif;}
 
-#body_content, #side_body_content {
+/* using local fonts? make sure to read up on Paul Irish's
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+ul.content_menu li{
   float: left;
-  width: 45%;
-  background: white;
-  color: #333;
-  padding: 20px;
 }
 
-#menu ul {
-  list-style: none;
-  padding: 0px;
+/**
+ * LAYOUT
+ */
+html{
+  background: url('../images/layout/body_repeat.jpg') repeat;
 }
-
-#menu ul li {
-  float: left;
-  margin-right: 10px;
+body{
+  background: url('../images/layout/body.jpg') top center no-repeat;
+  width: 100%;
 }
-
-#menu ul li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
+header.layout{
+  height: 180px;
 }
+  div#skydiver{
+    z-index: 1;
+    background: url('../images/layout/skydiver.png') top center no-repeat;
+    width: 66px;
+    height: 72px;
+    position: relative;
+    top: 180px;
+    left: 60%;
+  }
+div#main{
+  display: table;
+  margin: auto;
+  height: 450px;
+}
+footer.layout{
+  background: url('../images/layout/footer.jpg') top center no-repeat;
+  width: 100%;
+  min-height: 183px;
+}
+section#content{
+  display: table-cell;
+  width: 600px;
+  padding: 5px;
+  vertical-align: top;
+}
+section#sidebar{
+  display: table-cell;
+  width: 300px;
+  padding: 5px;
+  vertical-align: top;
+}
+  nav#main_menu{
+    position: relative;
+    top: 300px;
+    width: 300px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 3px dashed white;
+  }
+    nav#main_menu div{
+      width: 61px;
+      height: 60px;
+      margin: 0px 7px;
+    }
+    div.menu_typewriter{
+      background: url('../images/layout/typewriter.png') top center no-repeat;
+    }
+    div.menu_typewriter:hover{
+      background: url('../images/layout/typewriter_c.png') top center no-repeat;
+    }
+    div.menu_laptop{
+      background: url('../images/layout/laptop.png') top center no-repeat;
+    }
+    div.menu_laptop:hover{
+      background: url('../images/layout/laptop_c.png') top center no-repeat;
+    }
+    div.menu_camera{
+      background: url('../images/layout/camera.png') top center no-repeat;
+    }
+    div.menu_camera:hover{
+      background: url('../images/layout/camera_c.png') top center no-repeat;
+    }
+    div.menu_backpack{
+      background: url('../images/layout/backpack.png') top center no-repeat;
+    }
+    div.menu_backpack:hover{
+      background: url('../images/layout/backpack_c.png') top center no-repeat;
+    }
 
-#menu ul li.selected a, #menu ul li a:hover {
-  background: #CCC;
+/**
+ * FOOTER
+ */
+footer.layout div.social_media{
+  position: relative;
+  width: 215px;
+  left: 70%;
+  top: 75px;
+}
+footer.layout p.copyright{
+  color: #FFF;
+  position: relative;
+  top: 160px;
+  font-weight: bold;
 }
 

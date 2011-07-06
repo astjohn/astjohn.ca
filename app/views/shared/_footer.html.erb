@@ -1,4 +1,17 @@
-<p>
-  <%= t('.copyright', :year => Time.now.year,
+<footer class="layout">
+  <div class="social_media">
+    <ul class="content_menu">
+      <li><%= link_to(image_tag("layout/twitter.png", :alt => 'Twitter'),
+                        "http://www.twitter.com/astjohn/", :target => "blank") %></li>
+      <li><%= link_to(image_tag("layout/linkedin.png", :alt => 'LinkedIn'),
+                        "http://www.linkedin.com/in/astjohn/", :target => "blank") %></li>
+      <li><%= link_to(image_tag("layout/github.png", :alt => "GitHub"),
+                        "http://www.github.com/astjohn/", :target => "blank") %></li>
+    </ul>
+  </div>
+  <p class="copyright">
+    <%= t('.copyright', :year => Time.now.year,
                       :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
-</p>
+  </p>
+</footer>
+
