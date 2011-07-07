@@ -42,7 +42,7 @@
   left:0;
 }
 #next_prev_article a.home{
-  left:33%;
+  left:77%;
   text-align:center;
 }
 #next_prev_article a.next{
@@ -101,13 +101,42 @@ article.blog_post{
 }
 article header h1{
   font-size: 25px;
+  position: relative;
+  z-index: 2;
 }
 article header h1 a{
   color: #920000;
+  position: relative;
+  z-index: 2;
 }
 article h1{
   font-size: 18px;
 }
+
+article section.content{
+  position: relative;
+  z-index: 2;
+}
+article section.details{
+  background: url('../images/blog/cloud.png') center top no-repeat;
+  width: 160px;
+  height: 70px;
+  position: relative;
+  top: -30px;
+  left: -125px;
+  margin-right: -200px;
+  float: left;
+  z-index: 1;
+}
+  article time{
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+  }
 section.footer_details div.social{
   float: left;
 }
