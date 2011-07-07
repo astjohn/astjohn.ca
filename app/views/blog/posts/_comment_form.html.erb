@@ -1,0 +1,29 @@
+<div id="comment_form">
+  <h2>Add a Comment</h2>
+  <%= form_for [:blog_post, blog_comment] do |f| %>
+    <%= render :partial => "/shared/admin/error_messages",
+               :locals => {
+                 :object => f.object,
+                 :include_object_name => true
+               } %>
+    <table class="form">
+      <tr>
+        <td><%= f.label :name %></td>
+        <td><%= f.text_field :name %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :email %></td>
+        <td><%= f.email_field :email %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :comment %></td>
+        <td><%= f.text_area :message, :rows => 6 %></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><%= f.submit 'Submit' %></td>
+      </tr>
+    </table>
+  <% end %>
+</div>
+
