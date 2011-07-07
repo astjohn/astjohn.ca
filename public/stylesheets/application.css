@@ -6,7 +6,7 @@
 @import url('refinery/application.css');
 
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 13px Helmet, Freesans, sans-serif;}
+body {font: 14px Helmet, Freesans, sans-serif;}
 
 /* using local fonts? make sure to read up on Paul Irish's
 	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
@@ -27,8 +27,38 @@ a:link {-webkit-tap-highlight-color: #fcd700;}
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
+
+p{
+  margin-left: 1em;
+}
+ul{
+  list-style-type: disc;
+  margin-left: 3.5em;
+}
+ol{
+  margin-left: 2.5em;
+}
+ul.content_menu{
+  margin: 0em;
+}
 ul.content_menu li{
   float: left;
+  list-style-type: none;
+}
+h1, h2, h3, h4{
+  color: #920000;
+}
+h1{
+  font-size: 16px;
+  font-weight: bold;
+}
+h2{
+  font-size: 15px;
+  font-weight: bold;
+}
+h3{
+  font-size: 14px;
+  font-style: italic;
 }
 
 /**
@@ -63,21 +93,23 @@ footer.layout{
   width: 100%;
   min-height: 183px;
 }
-section#content{
+section#body_content_left{
   display: table-cell;
   width: 600px;
-  padding: 5px;
+  padding: 0em 1em 1em 0em;
   vertical-align: top;
 }
-section#sidebar{
+section#body_content_right{
   display: table-cell;
   width: 300px;
   padding: 5px;
   vertical-align: top;
 }
+  div#me{
+    width: 300px;
+    height: 300px;
+  }
   nav#main_menu{
-    position: relative;
-    top: 300px;
     width: 300px;
     height: 60px;
     padding-bottom: 10px;

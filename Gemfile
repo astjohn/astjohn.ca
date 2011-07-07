@@ -62,6 +62,7 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # https://github.com/resolve/refinerycms-blog/issues/80
 gem 'refinerycms-blog', :git => 'https://github.com/resolve/refinerycms-blog.git',
                         :ref => '8aad45e5b04121a63760'
+#gem 'refinerycms-blog', :path => '/home/adam/webdev/refinerycms-blog'
 
 # PORTFOLIOS
 gem 'refinerycms-portfolio', '~> 0.9.9'

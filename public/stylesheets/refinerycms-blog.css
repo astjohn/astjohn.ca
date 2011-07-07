@@ -97,6 +97,46 @@
  * Article Content
  */
 article.blog_post{
-  margin-bottom: 25px;
+  margin-bottom: 2em;
+}
+article header h1{
+  font-size: 25px;
+}
+article header h1 a{
+  color: #920000;
+}
+article h1{
+  font-size: 18px;
+}
+section.footer_details div.social{
+  float: left;
+}
+  section.footer_details img.tag,
+  aside.comment_count img.comments{
+    vertical-align: middle;
+  }
+  aside.filed_in,
+  aside.tagged{
+    display: inline-block;
+  }
+  aside.comment_count{
+    float: right;
+  }
+  aside.comment_count iframe{
+    vertical-align: middle;
+  }
+/**
+ * Sidebar
+ */
+ul#categories,
+ul#blog_posts, #blog_archive_list ul{
+  margin: 0em;
+}
+#categories li,
+#blog_archive_list li{
+  list-style-type: none;
+}
+#body_content_right h2{
+  margin-top: 1em;
 }
 

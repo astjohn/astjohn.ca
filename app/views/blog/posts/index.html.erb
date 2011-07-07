@@ -21,4 +21,15 @@
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
-<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag('refinerycms-blog', 'google-code-prettify/sunburst') %>
+<% end %>
+<% content_for :javascripts do %>
+  <%= javascript_include_tag('google-code-prettify/prettify',
+                             'google-code-prettify/prettify_load',
+                             'google-code-prettify/lang-css',
+                             'google-code-prettify/lang-go',
+                             'google-code-prettify/lang-sql',
+                             'google-code-prettify/lang-yaml') %>
+<% end %>
+

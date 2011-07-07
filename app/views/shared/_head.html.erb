@@ -38,6 +38,6 @@
   <%= yield :stylesheets %>
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
-  <%= javascript_include_tag 'modernizr-min' %>
+  <%= javascript_include_tag :defaults, 'modernizr-min' %>
 </head>
 
