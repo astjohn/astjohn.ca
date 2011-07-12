@@ -22,16 +22,9 @@
       <% end %>
     </div>
     <aside class='comment_count'>
-      <% if BlogPost.comments_allowed? %>
-        <% if post.comments.any? %>
-          <a href="http://twitter.com/share" class="twitter-share-button" data-url="<%= blog_post_url(post) %>" data-text="<%= post.title %>" data-count="horizontal" data-via="astjohn">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-          <%= image_tag "blog/dialog.png", :alt => "comments", :class => "comments" %>
-           (<%= pluralize(post.comments.approved.count, t('singular', :scope => 'blog.shared.comments')) %>)
-        <% else %>
-              (<%= t('none', :scope => 'blog.shared.comments') %>)
-        <% end %>
-      <% end %>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="<%= blog_post_url(post) %>" data-text="<%= post.title %>" data-count="horizontal" data-via="astjohn">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <%= image_tag "blog/dialog.png", :alt => "comments", :class => "comments" %>
+      <%= comment_link(post) %>
     </aside>
   </section>
 </footer>
