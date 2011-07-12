@@ -255,6 +255,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   mysql2 (~> 0.2.7)
+  rails (= 3.0.9)
   refinerycms (~> 1.0.3)
   refinerycms-blog!
   refinerycms-i18n (~> 1.0.0)
