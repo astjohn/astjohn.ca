@@ -22,10 +22,15 @@
       <% end %>
     </div>
     <aside class='comment_count'>
+      <div class="g-plusone" data-size="medium" data-count="true" href="<%= blog_post_url(post) %>"></div>
       <a href="http://twitter.com/share" class="twitter-share-button" data-url="<%= blog_post_url(post) %>" data-text="<%= post.title %>" data-count="horizontal" data-via="astjohn">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <%= image_tag "blog/dialog.png", :alt => "comments", :class => "comments" %>
       <%= comment_link(post) %>
     </aside>
   </section>
 </footer>
+<%= content_for :javascripts do %>
+<!-- Google Plus One Button -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<% end %>
 
