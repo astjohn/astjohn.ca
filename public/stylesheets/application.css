@@ -121,28 +121,28 @@ section#body_content_right{
       margin: 0px 7px;
     }
     div.menu_typewriter{
-      background: url('../images/layout/typewriter.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') 0px 0px no-repeat;
     }
     div.menu_typewriter:hover{
-      background: url('../images/layout/typewriter_c.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') 0px -62px no-repeat;
     }
     div.menu_laptop{
-      background: url('../images/layout/laptop.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') -62px 0px no-repeat;
     }
     div.menu_laptop:hover{
-      background: url('../images/layout/laptop_c.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') -62px -63px no-repeat;
     }
     div.menu_camera{
-      background: url('../images/layout/camera.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') -125px 0px no-repeat;
     }
     div.menu_camera:hover{
-      background: url('../images/layout/camera_c.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') -125px -63px no-repeat;
     }
     div.menu_backpack{
-      background: url('../images/layout/backpack.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') -187px 0px no-repeat;
     }
     div.menu_backpack:hover{
-      background: url('../images/layout/backpack_c.png') top center no-repeat;
+      background: url('../images/layout/menu_sprite.png') -187px -63px no-repeat;
     }
 
 /**
