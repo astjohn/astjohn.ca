@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
+#require 'rubygems'
 
-ENV['GEM_HOME'] = "/home/astjohn/.rvm/gems/ruby-1.9.2-p180@astjohn.ca"
-ENV['GEM_PATH'] = "/home/astjohn/.rvm/gems/ruby-1.9.2-p180@astjohn.ca:/home/astjohn/.rvm/gems/ruby-1.9.2-p180@global"
+#ENV['GEM_HOME'] = "/home/astjohn/.rvm/gems/ruby-1.8.7-p334@astjohn.ca"
+#ENV['GEM_PATH'] = "/home/astjohn/.rvm/gems/ruby-1.8.7-p334@astjohn.ca:/home/astjohn/.rvm/gems/ruby-1.8.7-p334@global"
 
-require 'rubygems'
-Gem.clear_paths
+#require 'rubygems'
+#Gem.clear_paths
 
 # END DREAMHOST REQUIREMENTS
 
