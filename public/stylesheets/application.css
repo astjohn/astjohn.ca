@@ -5,6 +5,14 @@
 
 @import url('refinery/application.css');
 
+/**
+ * Special Fonts
+ */
+@font-face {
+    font-family: "Allan";
+    src: url(../fonts/Allan-Bold.ttf) format("truetype");
+}
+
 html {height: 100%;}
 
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
@@ -84,6 +92,17 @@ header.layout{
     position: relative;
     top: 180px;
     left: 60%;
+  }
+  div#title a{
+    z-index: 1;
+    color: #920000;
+    position: relative;
+    top: 20px;
+    font-family: "Allan";
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+
   }
 div#main{
   display: table;
