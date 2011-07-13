@@ -9,8 +9,12 @@
  * Special Fonts
  */
 @font-face {
-    font-family: "Allan";
-    src: url(../fonts/Allan-Bold.ttf) format("truetype");
+  font-family: "Allan";
+  src: url(../fonts/Allan-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ShadowsIntoLight";
+  src: url(../fonts/ShadowsIntoLight.ttf) format("truetype");
 }
 
 html {height: 100%;}
@@ -102,7 +106,18 @@ header.layout{
     font-size: 50px;
     text-decoration: none;
     text-shadow: 1px 1px 1px #333;
-
+  }
+  div#title a:hover{
+    border-bottom: 3px dashed;
+  }
+  div#subtitle{
+    z-index: 1;
+    color: #000A47;
+    position: relative;
+    top: -25px;
+    left: 275px;
+    font-family: "ShadowsIntoLight";
+    font-size: 25px;
   }
 div#main{
   display: table;
