@@ -114,6 +114,10 @@ footer.layout{
   width: 100%;
   min-height: 183px;
 }
+  div#footer_content_wrap{
+    width: 900px;
+    margin: auto;
+  }
 section#body_content_left{
   display: table-cell;
   width: 600px;
@@ -172,13 +176,14 @@ section#body_content_right{
 footer.layout div.social_media{
   position: relative;
   width: 215px;
-  left: 70%;
+  left: 725px;
   top: 75px;
 }
 footer.layout p.copyright{
   color: #FFF;
   position: relative;
   top: 160px;
+  left: -250px;
   font-weight: bold;
 }
 

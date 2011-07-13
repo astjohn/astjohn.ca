@@ -1,20 +1,22 @@
 <footer class="layout">
-  <div class="social_media">
-    <ul class="content_menu">
-      <li><%= link_to(image_tag("layout/twitter.png", :alt => 'Twitter'),
-                        "http://www.twitter.com/astjohn/", :target => "blank",
-                        :title => "@astjohn") %></li>
-      <li><%= link_to(image_tag("layout/linkedin.png", :alt => 'LinkedIn'),
-                        "http://www.linkedin.com/in/astjohn/", :target => "blank",
-                        :title => "LinkedIn") %></li>
-      <li><%= link_to(image_tag("layout/github.png", :alt => "GitHub"),
-                        "http://www.github.com/astjohn/", :target => "blank",
-                        :title => "GitHub") %></li>
-    </ul>
+  <div id="footer_content_wrap">
+    <div class="social_media">
+      <ul class="content_menu">
+        <li><%= link_to(image_tag("layout/twitter.png", :alt => 'Twitter'),
+                          "http://www.twitter.com/astjohn/", :target => "blank",
+                          :title => "@astjohn") %></li>
+        <li><%= link_to(image_tag("layout/linkedin.png", :alt => 'LinkedIn'),
+                          "http://www.linkedin.com/in/astjohn/", :target => "blank",
+                          :title => "LinkedIn") %></li>
+        <li><%= link_to(image_tag("layout/github.png", :alt => "GitHub"),
+                          "http://www.github.com/astjohn/", :target => "blank",
+                          :title => "GitHub") %></li>
+      </ul>
+    </div>
+    <p class="copyright">
+      <%= t('.copyright', :year => Time.now.year,
+                        :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+    </p>
   </div>
-  <p class="copyright">
-    <%= t('.copyright', :year => Time.now.year,
-                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
-  </p>
 </footer>
 
