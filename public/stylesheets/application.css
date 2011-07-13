@@ -5,8 +5,10 @@
 
 @import url('refinery/application.css');
 
+html {height: 100%;}
+
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 14px Helmet, Freesans, sans-serif;}
+body {height: 100%; font: 14px Helmet, Freesans, sans-serif;}
 
 /* using local fonts? make sure to read up on Paul Irish's
 	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
@@ -86,7 +88,7 @@ header.layout{
 div#main{
   display: table;
   margin: auto;
-  height: 450px;
+  height: 100%;
 }
 footer.layout{
   background: url('../images/layout/footer.jpg') top center no-repeat;
