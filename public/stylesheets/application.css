@@ -102,7 +102,7 @@ header.layout{
     color: #920000;
     position: relative;
     top: 20px;
-    font-family: "Allan";
+    font-family: "Allan", Helmet, Freesans;
     font-size: 50px;
     text-decoration: none;
     text-shadow: 1px 1px 1px #333;
@@ -116,7 +116,7 @@ header.layout{
     position: relative;
     top: -25px;
     left: 275px;
-    font-family: "ShadowsIntoLight";
+    font-family: "ShadowsIntoLight", Helmet, Freesans;
     font-size: 25px;
   }
 div#main{
@@ -148,6 +148,67 @@ section#body_content_right{
   div#me{
     width: 300px;
     height: 300px;
+  }
+  ul#words{
+    background: url('../images/layout/words.png') 0px -10px no-repeat;
+    position: relative;
+    top: 0px;
+    left: -100px;
+    width: 800px;
+    height: 500px;
+    z-index: 3;
+  }
+    div.menu_photo{
+      position: relative;
+      width: 745px;
+      height: 90px;
+    }
+    div.menu_photo:hover{
+      background: url('../images/layout/words.png') 0px -506px no-repeat;
+    }
+    div.menu_blog,
+    li.menu_blog{
+      width: 495px;
+      height: 190px;
+    }
+    li.menu_blog{
+      position: relative;
+      left: 250px;
+    }
+    li.menu_blog:hover{
+      background: url('../images/layout/words.png') -250px -596px no-repeat;
+    }
+    div.menu_web,
+    li.menu_web{
+      width: 770px;
+      height: 220px;
+    }
+    li.menu_web{
+      position: relative;
+      left: 20px;
+    }
+    li.menu_web:hover{
+      background: url('../images/layout/words.png') -20px -786px no-repeat;
+    }
+    li.menu_travel,
+    div.menu_travel{
+      width: 472px;
+      height: 112px;
+    }
+    li.menu_travel{
+      position: relative;
+      left: 273px;
+      top: -208px;
+      z-index: 4;
+    }
+    li.menu_travel:hover{
+      background: url('../images/layout/words.png') -273px -1023px no-repeat;
+    }
+  img#portrait{
+    position: relative;
+    top: -610px;
+    left: 665px;
+    z-index: 4;
   }
   nav#main_menu{
     width: 300px;
