@@ -1,5 +1,7 @@
 <header class="layout">
-  <div id="skydiver"></div>
+  <% unless @page.path == "Home" %>
+    <div id="skydiver"></div>
+  <% end %>
   <div id="title"><%= link_to "Adam St. John", root_path %></div>
   <div id="subtitle">Engineer and Entrepreneur</div>
 </header>
