@@ -108,6 +108,15 @@ article header h1 a{
 article h1{
   font-size: 18px;
 }
+article h2{
+  margin-top: 1em;
+}
+article h3{
+  margin-top: 0.5em;
+}
+article p{
+  margin-bottom: 1em;
+}
 
 article section.content{
   position: relative;
@@ -133,6 +142,9 @@ article section.details{
     font-weight: bold;
     color: #555;
   }
+pre.prettyprint code{
+  font-size: 10px;
+}
 section.footer_details div.social{
   float: left;
 }
@@ -150,6 +162,7 @@ section.footer_details div.social{
   aside.comment_count iframe{
     vertical-align: middle;
   }
+
 
 /**
  * Comments
