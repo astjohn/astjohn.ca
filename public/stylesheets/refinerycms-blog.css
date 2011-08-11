@@ -142,6 +142,11 @@ article section.details{
     font-weight: bold;
     color: #555;
   }
+
+article p code{
+  font-weight: bold;
+  background-color: #EEE;
+}
 pre.prettyprint code{
   font-size: 10px;
 }
