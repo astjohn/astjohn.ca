@@ -19,7 +19,7 @@
           <%= value %>
         </div>
       <% end %>
-      <%= render :partial => "comment_form", :locals => {:blog_post => @blog_post,
+      <%= render :partial => "disqus_comment_form", :locals => {:blog_post => @blog_post,
                                                          :blog_comment => @blog_comment} %>
     </aside>
   <% end %>

@@ -10,7 +10,8 @@ module MyPostsHelper
       else
         str = t('none', :scope => 'blog.shared.comments')
       end
-      link_to str, blog_post_url(post).to_s + "#comments"
+      link_to str, blog_post_url(post).to_s + "#disqus_thread",
+                   {"data-disqus-identifier" => "astjohn.ca_blog_#{post.id}"}
     end
   end
 
