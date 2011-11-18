@@ -1,3 +1,15 @@
+<section class="layout" id="body_content_right">
+  <% if @page.path == "Home" %>
+
+  <% else %>
+    <nav id="main_menu">
+      <%= image_tag "layout/headshot.jpeg", :alt => "That's me!", :title => "That's me!", :id => "headshot" %>
+    </nav>
+    <p id="hello">Hello!<br/>I'm Adam and I hope this blog highlight's some of the things that I enjoy.</p>
+    <%= raw @page[:side_body] %>
+    <%= yield :body_content_right %>
+  <% end %>
+</section>
 <div class="layout" id="main">
   <section class="layout" id="body_content_left">
     <% if @page.path == "Home" %>
@@ -13,24 +25,5 @@
       <%= yield :body_content_left %>
     <% end %>
   </section>
-  <section class="layout" id="body_content_right">
-    <div id="me">
 
-    </div>
-    <% if @page.path == "Home" %>
-
-    <% else %>
-      <nav id="main_menu">
-        <ul class="content_menu">
-          <li><%= link_to raw("<div class=\"menu_typewriter\"></div>"), root_path + "blog", :title => "Blog" %></li>
-          <li><a href="#"><div class="menu_laptop"></div></a></li>
-          <li><a href="#"><div class="menu_camera"></div></a></li>
-          <li><a href="#"><div class="menu_backpack"></div></a></li>
-        </ul>
-      </nav>
-
-      <%= raw @page[:side_body] %>
-      <%= yield :body_content_right %>
-    <% end %>
-  </section>
 </div>

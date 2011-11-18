@@ -94,8 +94,8 @@ header.layout{
     width: 66px;
     height: 72px;
     position: relative;
-    top: 180px;
-    left: 60%;
+    top: 175px;
+    left: 90%;
   }
   div#title a{
     z-index: 1;
@@ -135,14 +135,17 @@ footer.layout{
   }
 section#body_content_left{
   display: table-cell;
-  width: 600px;
+  width: 700px;
   padding: 0em 1em 1em 0em;
   vertical-align: top;
 }
 section#body_content_right{
-  display: table-cell;
-  width: 300px;
+ /* display: table-cell; */
+  position: relative;
+  float: right;
+  width: 200px;
   padding: 5px;
+  margin-right: 50px;
   vertical-align: top;
 }
   div#me{
@@ -211,40 +214,19 @@ section#body_content_right{
     z-index: 4;
   }
   nav#main_menu{
-    width: 300px;
-    height: 60px;
-    padding-bottom: 10px;
-    border-bottom: 3px dashed white;
+    width: 200px;
+    padding-bottom: 20px;
   }
-    nav#main_menu div{
-      width: 61px;
-      height: 60px;
-      margin: 0px 7px;
+    nav#main_menu img#headshot{
+      border: 2px solid white;
     }
-    div.menu_typewriter{
-      background: url('../images/layout/menu_sprite.png') 0px 0px no-repeat;
-    }
-    div.menu_typewriter:hover{
-      background: url('../images/layout/menu_sprite.png') 0px -62px no-repeat;
-    }
-    div.menu_laptop{
-      background: url('../images/layout/menu_sprite.png') -62px 0px no-repeat;
-    }
-    div.menu_laptop:hover{
-      background: url('../images/layout/menu_sprite.png') -62px -63px no-repeat;
-    }
-    div.menu_camera{
-      background: url('../images/layout/menu_sprite.png') -125px 0px no-repeat;
-    }
-    div.menu_camera:hover{
-      background: url('../images/layout/menu_sprite.png') -125px -63px no-repeat;
-    }
-    div.menu_backpack{
-      background: url('../images/layout/menu_sprite.png') -187px 0px no-repeat;
-    }
-    div.menu_backpack:hover{
-      background: url('../images/layout/menu_sprite.png') -187px -63px no-repeat;
-    }
+  p#hello{
+    font-family: 'Rancho', cursive;
+    font-size: 1.5em;
+    margin: 0px 10px 30px 10px;
+    color: #920000;
+  }
+
 
 /**
  * FOOTER
@@ -262,4 +244,3 @@ footer.layout p.copyright{
   left: -250px;
   font-weight: bold;
 }
-

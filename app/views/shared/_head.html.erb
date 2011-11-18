@@ -35,9 +35,11 @@
                                                             request.env['HTTP_USER_AGENT'] !~ /MSIE/ and (theme ||= nil).blank?) %>
   <%= stylesheet_link_tag "home", :theme => theme if home_page? %>
 
+  <link href='http://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+
   <%= yield :stylesheets %>
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
   <%= javascript_include_tag :defaults, 'modernizr-min' %>
 </head>
-
