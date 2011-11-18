@@ -228,7 +228,9 @@ div#comment_form input#blog_comment_submit{
 /**
  * Sidebar
  */
-ul#categories,
+ul#categories {
+  margin: 0em;
+}
 ul#blog_posts, #blog_archive_list ul{
   margin: 0em;
   font-size: 0.75em;
