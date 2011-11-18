@@ -16,7 +16,7 @@
         <%= post.body.html_safe %>
       <% end %>
     </section>
-    <%= render :partial => "blog/shared/post_footer", :locals => {:post => post} %>
+    <%= render :partial => "blog/shared/post_footer", :locals => {:post => post,
+                                                                  :comment_link => true} %>
   </article>
 <% end %>
-

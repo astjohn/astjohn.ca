@@ -15,11 +15,11 @@
   <section class='clearfix content'>
     <%= @blog_post.body.html_safe %>
   </section>
-  <%= render :partial => "blog/shared/post_footer", :locals => {:post => @blog_post} %>
+  <%= render :partial => "blog/shared/post_footer", :locals => {:post => @blog_post,
+                                                                :comment_link => false} %>
   <% if BlogPost::ShareThis.enabled? %>
     <span class="st_sharethis" displayText="ShareThis"></span>
   <% end %>
 </article>
 <%= render :partial => '/shared/draft_page_message' unless @blog_post.nil? or @blog_post.live? -%>
 <%= render 'nav' if next_or_previous?(@blog_post) %>
-
