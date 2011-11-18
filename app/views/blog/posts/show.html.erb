@@ -27,7 +27,7 @@
 
 <%= render :partial => "/shared/content_page", :locals => { :remove_automatic_sections => true }  %>
 
-<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog', 'google-code-prettify/sunburst') %>
+<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
 <% content_for :before_javascript_libraries, jquery_include_tags(:jquery_ui => false) %>
 <% content_for :javascripts do %>
   <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
@@ -36,11 +36,5 @@
   <script>stLight.options({publisher:'<%= BlogPost::ShareThis.key %>'});</script>
 <% end if BlogPost::ShareThis.enabled? %>
 <% content_for :javascripts do %>
-  <%= javascript_include_tag('google-code-prettify/prettify',
-                             'google-code-prettify/prettify_load',
-                             'google-code-prettify/lang-css',
-                             'google-code-prettify/lang-go',
-                             'google-code-prettify/lang-sql',
-                             'google-code-prettify/lang-yaml') %>
 <% end %>
-
+<%= render :partial => "/blog/shared/syntax_highlighter" %>
