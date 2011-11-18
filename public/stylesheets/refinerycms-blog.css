@@ -231,6 +231,10 @@ div#comment_form input#blog_comment_submit{
 ul#categories,
 ul#blog_posts, #blog_archive_list ul{
   margin: 0em;
+  font-size: 0.75em;
+}
+ul#blog_posts li {
+  margin-bottom: 0.75em;
 }
 #categories li,
 #blog_archive_list li{
@@ -239,4 +243,3 @@ ul#blog_posts, #blog_archive_list ul{
 #body_content_right h2{
   margin-top: 1em;
 }
-
