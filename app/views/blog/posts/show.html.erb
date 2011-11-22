@@ -34,5 +34,6 @@
   <script>stLight.options({publisher:'<%= BlogPost::ShareThis.key %>'});</script>
 <% end if BlogPost::ShareThis.enabled? %>
 <% content_for :javascripts do %>
+  <%= javascript_include_tag 'blog' %>
 <% end %>
 <%= render :partial => "/blog/shared/syntax_highlighter" %>
