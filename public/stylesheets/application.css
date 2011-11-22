@@ -94,7 +94,7 @@ header.layout{
     width: 66px;
     height: 72px;
     position: relative;
-    top: 175px;
+    top: 100px;
     left: 730px;
   }
   div#title, div#subtitle {
@@ -222,9 +222,9 @@ section#body_content_right{
       background: url('../images/layout/words.png') -273px -1023px no-repeat;
     }
   img#portrait{
-    position: absolute;
-    top: 180px;
-    left: 930px;
+    position: relative;
+    top: -500px;
+    left: 270px;
     z-index: 4;
   }
   nav#main_menu{
