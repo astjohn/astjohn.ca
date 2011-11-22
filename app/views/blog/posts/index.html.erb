@@ -24,7 +24,13 @@
 <% end %>
 <% content_for :javascripts do %>
   <!-- Google Plus One Button -->
-  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
   <!-- Disqus Comment Count -->
   <script type="text/javascript">
       var disqus_shortname = 'astjohn';

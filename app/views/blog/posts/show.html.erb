@@ -34,6 +34,15 @@
   <script>stLight.options({publisher:'<%= BlogPost::ShareThis.key %>'});</script>
 <% end if BlogPost::ShareThis.enabled? %>
 <% content_for :javascripts do %>
+  <!-- Google Plus One Button -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
   <%= javascript_include_tag 'blog' %>
 <% end %>
 <%= render :partial => "/blog/shared/syntax_highlighter" %>
