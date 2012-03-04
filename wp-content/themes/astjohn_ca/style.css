@@ -8,12 +8,6 @@ Version: 1.0
 Tags: vector, clouds, sky
 */
 
-/*	Less Framework 4
-	http://lessframework.com
-	by Joni Korpi
-	License: http://opensource.org/licenses/mit-license.php	*/
-
-
 /*	Resets
 	------	*/
 
@@ -40,6 +34,19 @@ a img {border: 0;}
 
 /*	Typography presets
 	------------------	*/
+
+/**
+ * Special Fonts
+ */
+@font-face {
+  font-family: "Allan";
+  src: url(fonts/Allan-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ShadowsIntoLight";
+  src: url(fonts/ShadowsIntoLight.ttf) format("truetype");
+}
+
 
 .gigantic {
 	font-size: 110px;
@@ -69,7 +76,7 @@ a img {border: 0;}
 }
 
 body {
-	font: 16px/24px Georgia, serif;
+	font: 16px/24px Helmet, Freesans, sans-serif;
 }
 
 .small, small {
@@ -87,20 +94,50 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 
 
-/*		Default Layout: 992px.
+/*  Default Layout: 1176px.
 		Gutters: 24px.
 		Outer margins: 48px.
-		Leftover space for scrollbars @1024px: 32px.
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    */
+		Leftover space for scrollbars @1280px: 104px.
+-------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11      12
+px      68    160    252    344    436    528    620    712    804    896     988     1080
+      */
+
+html {
+  background: url('images/layout/body_repeat.jpg') repeat;
+}
 
 body {
-	width: 896px;
 	padding: 72px 48px 84px;
-	background: url(images/layout/body.jpg) no-repeat top center;
+	background: url(images/layout/body2.jpg) no-repeat top center;
+	min-height: 400px;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+#page {
+  width: 1080px;
+  margin: auto;
+}
+
+#site-title {
+  z-index: 1;
+  color: #920000;
+  position: relative;
+  top: 20px;
+  font-family: "Allan", Helmet, Freesans;
+  font-size: 50px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #333;
+}
+#site-description {
+  z-index: 1;
+  color: #000A47;
+  position: relative;
+  top: -25px;
+  left: 265px;
+  font-family: "ShadowsIntoLight", Helmet, Freesans;
+  font-size: 25px;
 }
 
 
