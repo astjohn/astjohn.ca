@@ -1,0 +1,45 @@
+/*  Default Layout: 1176px.
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1280px: 104px.
+-------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11      12
+px      68    160    252    344    436    528    620    712    804    896     988     1080
+      */
+
+html {
+  background: url('images/layout/default/body_repeat.jpg') repeat;
+}
+
+body {
+	padding: 72px 48px 84px;
+	background: url(images/layout/default/body.jpg) no-repeat top center;
+	min-height: 400px;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+#page {
+  width: 1080px;
+  margin: auto;
+}
+
+#site-title {
+  z-index: 1;
+  color: #920000;
+  position: relative;
+  top: 20px;
+  font-family: "Allan", Helmet, Freesans;
+  font-size: 50px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #333;
+}
+#site-description {
+  z-index: 1;
+  color: #000A47;
+  position: relative;
+  top: -25px;
+  left: 265px;
+  font-family: "ShadowsIntoLight", Helmet, Freesans;
+  font-size: 25px;
+}
