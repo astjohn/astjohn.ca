@@ -14,13 +14,13 @@ html {
 body {
 	padding: 24px 48px 0px;
 	background: url(images/layout/default/body.jpg) no-repeat top center;
-	min-height: 400px;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 #page {
   width: 1080px;
+	min-height: 400px;
   margin: auto;
 }
 
