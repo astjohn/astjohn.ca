@@ -21,25 +21,13 @@ px      68    160    252    344    436    528    620    712    */
    * HEADER
    */
   #site-title {
-    z-index: 1;
-    position: relative;
     top: 20px;
-    font-family: "Allan", Helmet, Freesans;
     font-size: 50px;
-    text-shadow: 1px 1px 1px #333;
-  }
-  #site-title a {
-    color: #920000;
-    text-decoration: none;
   }
   #site-description {
-    z-index: 1;
-    color: #000A47;
-    position: relative;
     top: -25px;
     left: 265px;
     width: 300px;
-    font-family: "ShadowsIntoLight", Helmet, Freesans;
     font-size: 25px;
   }
 
@@ -50,22 +38,17 @@ px      68    160    252    344    436    528    620    712    */
     background: url('images/layout/tablet/portrait.png') top center no-repeat;
     width: 137px;
     height: 331px;
-    float: left;
-    position: relative;
     left: -10px;
     z-index: 4;
   }
   ul#words{
     background: url('images/layout/tablet/words.png') 0px -10px no-repeat;
-    float:  left;
-    position: relative;
     left: 15px;
     width: 530px;
     height: 325px;
     z-index: 3;
   }
     div.menu_photo{
-      position: relative;
       width: 495px;
       height: 50px;
     }
@@ -78,7 +61,6 @@ px      68    160    252    344    436    528    620    712    */
       height: 130px;
     }
     li.menu_blog{
-      position: relative;
       left: 150px;
     }
     li.menu_blog:hover{
@@ -90,7 +72,6 @@ px      68    160    252    344    436    528    620    712    */
       height: 150px;
     }
     li.menu_web{
-      position: relative;
       left: 20px;
     }
     li.menu_web:hover{
@@ -98,30 +79,26 @@ px      68    160    252    344    436    528    620    712    */
     }
     li.menu_travel,
     div.menu_travel{
-      width: 472px;
-      height: 112px;
+      width: 330px;
+      height: 90px;
     }
     li.menu_travel{
-      position: relative;
-      left: 273px;
-      top: -208px;
+      left: 180px;
+      top: -150px;
       z-index: 4;
     }
     li.menu_travel:hover{
-      background: url('images/layout/tablet/words.png') -273px -1023px no-repeat;
+      background: url('images/layout/tablet/words.png') -180px -668px no-repeat;
     }
   /**
    * FOOTER
    */
   footer {
-    position: relative;
     margin-top: -107px;
     height: 107px;
-    clear: both;
     background: url('images/layout/tablet/footer.jpg') top center no-repeat;
   }
   footer div.social_media{
-    position: relative;
     width: 215px;
     left: 525px;
     top: 43px;
@@ -130,12 +107,9 @@ px      68    160    252    344    436    528    620    712    */
     width: 40px;
   }
   footer p.copyright{
-    color: #FFF;
-    position: relative;
     top: 80px;
     left: -60px;
     margin: 0px;
-    font-weight: bold;
   }
 
 }

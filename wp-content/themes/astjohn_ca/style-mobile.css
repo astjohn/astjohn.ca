@@ -42,25 +42,13 @@ px      68    160    252    344    436    */
    * HEADER
    */
   #site-title {
-    z-index: 1;
-    position: relative;
     top: 0px;
-    font-family: "Allan", Helmet, Freesans;
-    font-size: 2em;
-    text-shadow: 1px 1px 1px #333;
-  }
-  #site-title a {
-    color: #920000;
-    text-decoration: none;
+    font-size: 32px;
   }
   #site-description {
-    z-index: 1;
-    color: #000A47;
-    position: relative;
     top: -45px;
     left: 150px;
     width: 300px;
-    font-family: "ShadowsIntoLight", Helmet, Freesans;
     font-size: 25px;
   }
 
@@ -71,23 +59,18 @@ px      68    160    252    344    436    */
     background: url('images/layout/mobile/portrait.png') top center no-repeat;
     width: 51px;
     height: 123px;
-    float: left;
-    position: relative;
     top: 10px;
     left: 72px;
     z-index: 4;
   }
   ul#words{
     background: url('images/layout/mobile/words.png') 0px 0px no-repeat;
-    float:  left;
-    position: relative;
     left: 80px;
     width: 200px;
     height: 123px;
     z-index: 3;
   }
     div.menu_photo{
-      position: relative;
       left: 0px;
       top: 0px;
       width: 188px;
@@ -131,14 +114,11 @@ px      68    160    252    344    436    */
    * FOOTER
    */
   footer {
-    position: relative;
     margin-top: -72px;
     height: 72px;
-    clear: both;
     background: url('images/layout/mobile/footer.jpg') top center no-repeat;
   }
   footer div.social_media{
-    position: relative;
     width: 100px;
     left: 350px;
     top: 30px;
@@ -147,12 +127,9 @@ px      68    160    252    344    436    */
     width: 30px;
   }
   footer p.copyright{
-    color: #FFF;
-    position: relative;
     top: 50px;
     left: -60px;
     margin: 0px;
-    font-weight: bold;
   }
 
 }
