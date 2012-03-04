@@ -19,5 +19,4 @@ Template Name: Home Page
 </div>
 
 
-
 <?php get_footer(); ?>

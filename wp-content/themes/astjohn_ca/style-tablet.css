@@ -14,9 +14,8 @@ px      68    160    252    344    436    528    620    712    */
   	background: url(images/layout/tablet/body.jpg) no-repeat top center;
 	}
 
-	#page {
-    width: 712px;
-    margin: auto;
+  #main {
+    padding-bottom: 107px;
   }
 
   /**
@@ -115,15 +114,14 @@ px      68    160    252    344    436    528    620    712    */
   /**
    * FOOTER
    */
-  footer.layout{
+  footer {
+    position: relative;
+    margin-top: -107px;
+    height: 107px;
+    clear: both;
     background: url('images/layout/tablet/footer.jpg') top center no-repeat;
-    min-height: 107px;
   }
-    div#footer_content_wrap{
-      width: 712px;
-      margin: auto;
-    }
-  footer.layout div.social_media{
+  footer div.social_media{
     position: relative;
     width: 215px;
     left: 525px;
@@ -132,12 +130,12 @@ px      68    160    252    344    436    528    620    712    */
   img#footer_twitter, img#footer_github, img#footer_linkedin {
     width: 40px;
   }
-  footer.layout p.copyright{
+  footer p.copyright{
     color: #FFF;
     position: relative;
     top: 80px;
     left: -60px;
-    margin-bottom:
+    margin: 0px;
     font-weight: bold;
   }
 

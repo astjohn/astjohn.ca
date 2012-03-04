@@ -9,19 +9,26 @@ px      68    160    252    344    436    528    620    712    804    896     98
 
 html {
   background: url('images/layout/default/body_repeat.jpg') repeat;
+  height: 100%;
 }
 
 body {
+  width: 1080px;
+  margin: auto;
 	background: url(images/layout/default/body.jpg) no-repeat top center;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-	height: 100%;
+  height: 100%;
 }
 
 #page {
-  width: 1080px;
-	height: 100%;
+  min-height: 100%;
 }
+#main {
+  padding-bottom: 162px;
+  overflow: auto;
+}
+
 
 /**
  * HEADER
@@ -119,24 +126,25 @@ ul#words{
 /**
  * FOOTER
  */
-footer.layout{
+footer {
+  position: relative;
+  margin-top: -162px;
+  height: 162px;
+  clear: both;
+  width: 100%;
   background: url('images/layout/default/footer.jpg') top center no-repeat;
-  min-height: 183px;
 }
-  div#footer_content_wrap{
-    width: 1080px;
-    margin: auto;
-  }
-footer.layout div.social_media{
+
+footer div.social_media{
   position: relative;
   width: 215px;
-  left: 825px;
-  top: 75px;
+  left: 780px;
+  top: 60px;
 }
-footer.layout p.copyright{
+footer p.copyright{
   color: #FFF;
   position: relative;
-  top: 155px;
-  left: -150px;
+  top: 135px;
+  left: -140px;
   font-weight: bold;
 }
