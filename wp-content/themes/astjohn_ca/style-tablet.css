@@ -9,7 +9,6 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	body {
-	  margin: auto;
 		width: 712px;
   	background: url(images/layout/tablet/body.jpg) no-repeat top center;
 	}
