@@ -8,12 +8,115 @@ px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
 
+  html {
+    background: #C4D6FD;
+  }
 	body {
 		width: 252px;
-		padding: 48px 34px 60px;
+  	background: url(images/layout/mobile/body_narrow.jpg) no-repeat top center;
 	}
 
+  #main {
+    padding-bottom: 38px;
+  }
+
+  /**
+  * HEADER
+  */
+  #site-title {
+    top: 0px;
+    font-size: 32px;
+  }
+  #site-description {
+    top: -35px;
+    left: 30px;
+    width: 300px;
+    font-size: 25px;
+  }
+	div#splash_me{
+    background: url('images/layout/mobile/portrait.png') top center no-repeat;
+    width: 51px;
+    height: 123px;
+    top: 5px;
+    left: 0px;
+    z-index: 4;
+  }
+  ul#words{
+    background: url('images/layout/mobile/words.png') 0px 0px no-repeat;
+    left: 5px;
+    width: 200px;
+    height: 123px;
+    z-index: 3;
+  }
+    div.menu_photo{
+      left: 0px;
+      top: 0px;
+      width: 188px;
+      height: 23px;
+    }
+    div.menu_photo:hover{
+      background: none;
+    }
+    div.menu_blog,
+    li.menu_blog{
+      left: 60px;
+      top: 0px;
+      width: 130px;
+      height: 50px;
+    }
+    li.menu_blog:hover{
+      background: none;
+    }
+    div.menu_web,
+    li.menu_web{
+      left: 0px;
+      top: 0px;
+      width: 200px;
+      height: 50px;
+    }
+    li.menu_web:hover{
+      background: none;
+    }
+    li.menu_travel,
+    div.menu_travel{
+      left: 70px;
+      top: -50px;
+      width: 120px;
+      height: 30px;
+      z-index: 4;
+    }
+    li.menu_travel:hover{
+      background: none;
+    }
+  /**
+   * FOOTER
+   */
+  footer {
+    margin-top: -38px;
+    height: 38px;
+    background: url('images/layout/mobile/footer_narrow.jpg') top center no-repeat;
+  }
+  footer div.social_media{
+    width: 100px;
+    left: 180px;
+    top: 10px;
+    height: 20px;
+  }
+  img#footer_twitter, img#footer_github, img#footer_linkedin {
+    width: 20px;
+  }
+  footer p.copyright{
+    top: 0px;
+    left: -30px;
+    margin: 0px;
+    font-size: 8px;
+    height: 8px;
+  }
+
+
 }
+
+
 
 
 /*		Wide Mobile Layout: 480px.
@@ -26,9 +129,6 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  html {
-    background: url('images/layout/mobile/body_repeat.jpg') repeat;
-  }
 	body {
 		width: 480px;
   	background: url(images/layout/mobile/body.jpg) no-repeat top center;
