@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	padding: 24px 48px 84px;
+	padding: 24px 48px 0px;
 	background: url(images/layout/default/body.jpg) no-repeat top center;
 	min-height: 400px;
 	color: rgb(60,60,60);
@@ -24,6 +24,9 @@ body {
   margin: auto;
 }
 
+/**
+ * HEADER
+ */
 #site-title {
   z-index: 1;
   position: relative;
@@ -46,6 +49,10 @@ body {
   font-family: "ShadowsIntoLight", Helmet, Freesans;
   font-size: 25px;
 }
+
+/**
+ * SPLASH
+ */
 div#splash_me{
   background: url('images/layout/default/portrait.png') top center no-repeat;
   width: 207px;
@@ -110,3 +117,28 @@ ul#words{
   li.menu_travel:hover{
     background: url('images/layout/default/words.png') -273px -1023px no-repeat;
   }
+/**
+ * FOOTER
+ */
+footer.layout{
+  background: url('images/layout/default/footer.jpg') top center no-repeat;
+  width: 100%;
+  min-height: 183px;
+}
+  div#footer_content_wrap{
+    width: 1080px;
+    margin: auto;
+  }
+footer.layout div.social_media{
+  position: relative;
+  width: 215px;
+  left: 825px;
+  top: 75px;
+}
+footer.layout p.copyright{
+  color: #FFF;
+  position: relative;
+  top: 160px;
+  left: -150px;
+  font-weight: bold;
+}

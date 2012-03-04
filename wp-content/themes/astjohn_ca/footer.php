@@ -12,24 +12,38 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" role="contentinfo">
 
-			<?php
-				/* A sidebar in the footer? Yep. You can can customize
-				 * your footer with three columns of widgets.
-				 */
-				if ( ! is_404() )
-					get_sidebar( 'footer' );
-			?>
-
-			<div id="site-generator">
-				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
-			</div>
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+
 <?php wp_footer(); ?>
+
+<footer class="layout">
+  <div id="footer_content_wrap">
+    <div class="social_media">
+      <ul class="floating">
+        <li>
+          <a href="http://www.twitter.com/astjohn" target="blank" title="@astjohn">
+            <image src="<?php bloginfo('template_directory'); ?>/images/layout/default/twitter.png" alt="Twitter">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/astjohn" target="blank" title="LinkedIn">
+            <image src="<?php bloginfo('template_directory'); ?>/images/layout/default/linkedin.png" alt="LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.github.com/astjohn" target="blank" title="github">
+            <image src="<?php bloginfo('template_directory'); ?>/images/layout/default/github.png" alt="Github">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="copyright">
+      © <?php echo date('Y', time()); ?> Adam St. John
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
