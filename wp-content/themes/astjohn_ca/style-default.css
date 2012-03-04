@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	padding: 72px 48px 84px;
+	padding: 24px 48px 84px;
 	background: url(images/layout/default/body.jpg) no-repeat top center;
 	min-height: 400px;
 	color: rgb(60,60,60);
@@ -26,13 +26,15 @@ body {
 
 #site-title {
   z-index: 1;
-  color: #920000;
   position: relative;
   top: 20px;
   font-family: "Allan", Helmet, Freesans;
   font-size: 50px;
-  text-decoration: none;
   text-shadow: 1px 1px 1px #333;
+}
+#site-title a {
+  color: #920000;
+  text-decoration: none;
 }
 #site-description {
   z-index: 1;
@@ -40,6 +42,71 @@ body {
   position: relative;
   top: -25px;
   left: 265px;
+  width: 300px;
   font-family: "ShadowsIntoLight", Helmet, Freesans;
   font-size: 25px;
 }
+div#splash_me{
+  background: url('images/layout/default/portrait.png') top center no-repeat;
+  width: 207px;
+  height: 500px;
+  float: left;
+  position: relative;
+  left: -10px;
+  z-index: 4;
+}
+ul#words{
+  background: url('images/layout/default/words.png') 0px -10px no-repeat;
+  float:  left;
+  position: relative;
+  left: 30px;
+  width: 800px;
+  height: 500px;
+  z-index: 3;
+}
+  div.menu_photo{
+    position: relative;
+    width: 745px;
+    height: 90px;
+  }
+  div.menu_photo:hover{
+    background: url('images/layout/default/words.png') 0px -506px no-repeat;
+  }
+  div.menu_blog,
+  li.menu_blog{
+    width: 495px;
+    height: 190px;
+  }
+  li.menu_blog{
+    position: relative;
+    left: 250px;
+  }
+  li.menu_blog:hover{
+    background: url('images/layout/default/words.png') -250px -596px no-repeat;
+  }
+  div.menu_web,
+  li.menu_web{
+    width: 770px;
+    height: 220px;
+  }
+  li.menu_web{
+    position: relative;
+    left: 20px;
+  }
+  li.menu_web:hover{
+    background: url('images/layout/default/words.png') -20px -786px no-repeat;
+  }
+  li.menu_travel,
+  div.menu_travel{
+    width: 472px;
+    height: 112px;
+  }
+  li.menu_travel{
+    position: relative;
+    left: 273px;
+    top: -208px;
+    z-index: 4;
+  }
+  li.menu_travel:hover{
+    background: url('images/layout/default/words.png') -273px -1023px no-repeat;
+  }
