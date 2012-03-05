@@ -126,7 +126,7 @@ ul#words{
 /**
  * FOOTER
  */
-footer {
+footer.layout {
   position: relative;
   margin-top: -162px;
   height: 162px;
@@ -135,13 +135,13 @@ footer {
   background: url('images/layout/default/footer.jpg') top center no-repeat;
 }
 
-footer div.social_media{
+footer.layout div.social_media{
   position: relative;
   width: 215px;
   left: 780px;
   top: 60px;
 }
-footer p.copyright{
+footer.layout p.copyright{
   color: #FFF;
   position: relative;
   top: 135px;

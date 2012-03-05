@@ -93,12 +93,12 @@ px      68    160    252    344    436    528    620    712    */
   /**
    * FOOTER
    */
-  footer {
+  footer.layout {
     margin-top: -107px;
     height: 107px;
     background: url('images/layout/tablet/footer.jpg') top center no-repeat;
   }
-  footer div.social_media{
+  footer.layout div.social_media{
     width: 215px;
     left: 525px;
     top: 43px;
@@ -106,7 +106,7 @@ px      68    160    252    344    436    528    620    712    */
   img#footer_twitter, img#footer_github, img#footer_linkedin {
     width: 40px;
   }
-  footer p.copyright{
+  footer.layout p.copyright{
     top: 80px;
     left: -60px;
     margin: 0px;

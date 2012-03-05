@@ -134,29 +134,29 @@ button {width: auto; overflow: visible;}
 
 
 .gigantic {
-	font-size: 110px;
+	font-size: 5em;
 	line-height: 120px;
 	letter-spacing: -2px;
 }
 
 .huge, h1 {
-	font-size: 68px;
+	font-size: 2.5em;
 	line-height: 72px;
 	letter-spacing: -1px;
 }
 
 .large, h2 {
-	font-size: 42px;
+	font-size: 2em;
 	line-height: 48px;
 }
 
 .bigger, h3 {
-	font-size: 26px;
+	font-size: 1.5em;
 	line-height: 36px;
 }
 
 .big, h4 {
-	font-size: 22px;
+	font-size: 1em;
 	line-height: 30px;
 }
 
@@ -181,7 +181,7 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 /* we like off-black for text */
 body, select, input, textarea {color: #333;}
 
-a {color: #03f;}
+a {color: #920000;}
 a:hover {color: #69f;}
 /*	j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;}

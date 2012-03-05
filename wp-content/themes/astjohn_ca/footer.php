@@ -17,7 +17,7 @@
 
 
 <?php wp_footer(); ?>
-<footer class="clearfix">
+<footer class="clearfix layout">
   <div class="social_media">
     <ul class="floating">
       <li>

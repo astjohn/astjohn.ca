@@ -91,12 +91,12 @@ px      68    160    252    */
   /**
    * FOOTER
    */
-  footer {
+  footer.layout {
     margin-top: -38px;
     height: 38px;
     background: url('images/layout/mobile/footer_narrow.jpg') top center no-repeat;
   }
-  footer div.social_media{
+  footer.layout div.social_media{
     width: 100px;
     left: 180px;
     top: 10px;
@@ -105,8 +105,8 @@ px      68    160    252    */
   img#footer_twitter, img#footer_github, img#footer_linkedin {
     width: 20px;
   }
-  footer p.copyright{
-    top: 0px;
+  footer.layout p.copyright {
+    top: 30px;
     left: -30px;
     margin: 0px;
     font-size: 8px;
@@ -213,23 +213,18 @@ px      68    160    252    344    436    */
   /**
    * FOOTER
    */
-  footer {
+  footer.layout {
     margin-top: -72px;
     height: 72px;
     background: url('images/layout/mobile/footer.jpg') top center no-repeat;
   }
-  footer div.social_media{
+  footer.layout div.social_media{
     width: 100px;
     left: 350px;
     top: 30px;
   }
   img#footer_twitter, img#footer_github, img#footer_linkedin {
     width: 30px;
-  }
-  footer p.copyright{
-    top: 50px;
-    left: -60px;
-    margin: 0px;
   }
 
 }
