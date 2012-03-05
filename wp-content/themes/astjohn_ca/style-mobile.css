@@ -106,7 +106,7 @@ px      68    160    252    */
     width: 20px;
   }
   footer.layout p.copyright {
-    top: 30px;
+    top: 0px;
     left: -30px;
     margin: 0px;
     font-size: 8px;
@@ -225,6 +225,13 @@ px      68    160    252    344    436    */
   }
   img#footer_twitter, img#footer_github, img#footer_linkedin {
     width: 30px;
+  }
+  footer.layout p.copyright {
+    top: 30px;
+    left: -30px;
+    margin: 0px;
+    font-size: 8px;
+    height: 8px;
   }
 
 }

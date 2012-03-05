@@ -200,19 +200,30 @@ div.post-date {
   top: -50px;
 }
   div.post-date > time {
+    font-weight: bold;
     position: relative;
     top: 25px;
     left: 35px;
   }
+article {
+  margin-bottom: 4em;
+}
 article p {
   margin-bottom: 1em;
 }
+#nav-below {
+  margin-top: 2em;
+}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
 
-
-/*  #comments #respond {*/
-/*    margin-top: 1.5em;*/
-/*  }*/
-/*  */
 
 /* =Comments
 ----------------------------------------------- */

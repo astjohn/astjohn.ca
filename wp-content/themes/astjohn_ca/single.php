@@ -17,7 +17,8 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'single' ); ?>
 
 
-					<nav id="nav-single">
+					<nav id="nav-below">
+					  <h3 class="assistive-text">Post navigation</h3>
 						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
 						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
 					</nav><!-- #nav-single -->
