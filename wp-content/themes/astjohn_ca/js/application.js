@@ -8,9 +8,6 @@ function slideBack() {
 
 $(document).ready(function() {
 
-//  $("#body_content_right").addClass("float_menu");
-//  $("#body_content_left").addClass("float_menu");
-
   $el = $("#secondary");
   $el.stop().delay(1000).animate({'right':'-300px'}, 1000);
   $el.hover(slideOut, slideBack);

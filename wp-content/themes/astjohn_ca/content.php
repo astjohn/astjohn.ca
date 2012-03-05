@@ -21,15 +21,14 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
-				<?php twentyeleven_posted_on(); ?>
+			  <div class="post-date">
+          <?php printf( __( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>' ),
+                esc_attr( get_the_date( 'c' ) ),
+                esc_html( get_the_date() ) ); ?>
+			  </div>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 
-			<?php if ( comments_open() && ! post_password_required() ) : ?>
-			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'twentyeleven' ) . '</span>', _x( '1', 'comments number', 'twentyeleven' ), _x( '%', 'comments number', 'twentyeleven' ) ); ?>
-			</div>
-			<?php endif; ?>
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>

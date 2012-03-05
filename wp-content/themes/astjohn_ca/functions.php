@@ -553,7 +553,7 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 }
 endif; // ends check for twentyeleven_comment()
 
-if ( ! function_exists( 'twentyeleven_posted_on' ) ) :
+if ( ! function_exists( 'astjohn_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  * Create your own twentyeleven_posted_on to override in a child theme
@@ -591,4 +591,3 @@ function twentyeleven_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
-

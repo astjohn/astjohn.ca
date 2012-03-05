@@ -3,8 +3,8 @@
  * The template for displaying content in the single.php template
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @subpackage Astjohn.ca
+ * @since Astjohn.ca 1.0
  */
 ?>
 
@@ -12,11 +12,15 @@
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php twentyeleven_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+			<?php if ( 'post' == get_post_type() ) : ?>
+			<div class="entry-meta">
+			  <div class="post-date">
+          <?php printf( __( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>' ),
+                esc_attr( get_the_date( 'c' ) ),
+                esc_html( get_the_date() ) ); ?>
+			  </div>
+			</div><!-- .entry-meta -->
+			<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -25,30 +29,35 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
+
+		<?php $show_sep = false; ?>
+		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
-
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
-			if ( '' != $tag_list ) {
-				$utility_text = __( 'This entry was posted in %1$s and tagged %2$s by <a href="%6$s">%5$s</a>. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'twentyeleven' );
-			} elseif ( '' != $categories_list ) {
-				$utility_text = __( 'This entry was posted in %1$s by <a href="%6$s">%5$s</a>. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'twentyeleven' );
-			} else {
-				$utility_text = __( 'This entry was posted by <a href="%6$s">%5$s</a>. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'twentyeleven' );
-			}
-
-			printf(
-				$utility_text,
-				$categories_list,
-				$tag_list,
-				esc_url( get_permalink() ),
-				the_title_attribute( 'echo=0' ),
-				get_the_author(),
-				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) )
-			);
+			if ( $categories_list ):
 		?>
+		<span class="cat-links">
+			<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
+			$show_sep = true; ?>
+		</span>
+		<?php endif; // End if categories ?>
+		<?php
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
+			if ( $tags_list ):
+			if ( $show_sep ) : ?>
+		<span class="sep"> | </span>
+			<?php endif; // End if $show_sep ?>
+		<span class="tag-links">
+			<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
+			$show_sep = true; ?>
+		</span>
+		<?php endif; // End if $tags_list ?>
+		<?php endif; // End if 'post' == get_post_type() ?>
+
+
+
 		<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) : // If a user has filled out their description and this is a multi-author blog, show a bio on their entries ?>
