@@ -1,6 +1,9 @@
 # Dreamhost runs on 1.8.7
 #.rvmrc
 
+#Wordpress stuff
+wp-config.php
+
 .bundle
 db/*.sqlite3
 log/*.log
