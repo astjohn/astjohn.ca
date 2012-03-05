@@ -42,5 +42,6 @@
   </p>
 </footer>
 
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/application.js"></script>
 </body>
 </html>
