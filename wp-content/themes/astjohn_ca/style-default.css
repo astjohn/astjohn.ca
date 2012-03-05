@@ -148,3 +148,45 @@ footer.layout p.copyright{
   left: -140px;
   font-weight: bold;
 }
+/**
+ * SIDEBAR
+ */
+#secondary {
+  position: fixed;
+  top: 50px;
+  right: -15px;
+  margin-right: 0px;
+  padding: 25px;
+  width: 300px;
+  background: rgba(174, 246, 118, 0.9);
+  background: rgba(174, 246, 118);
+  z-index: 5;
+  -moz-border-top-left-radius: 25px;
+  -moz-border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 10px solid rgb(255, 255, 255);
+  border: 10px solid rgba(255, 255, 255, 1);
+}
+  #secondary h2, #secondary h3 {
+    color: #295803;
+  }
+  #hello {
+    font-family: "Rancho";
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    color: #295803;
+  }
+  #me {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #FFFFFF;
+  }
+/**
+ * MAIN CONTENT
+ */
+h1.entry-title {
+  color: #920000;
+}

@@ -131,6 +131,10 @@ button {width: auto; overflow: visible;}
   font-family: "ShadowsIntoLight";
   src: url(fonts/ShadowsIntoLight.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Rancho";
+  src: url(fonts/Rancho-Regular.ttf) format("truetype");
+}
 
 
 .gigantic {
@@ -158,6 +162,10 @@ button {width: auto; overflow: visible;}
 .big, h4 {
 	font-size: 1em;
 	line-height: 30px;
+}
+
+.gigantic, .huge, h1, .large, h2, .bigger, h3, .big, h4 {
+  color: #1755a9;
 }
 
 body {
