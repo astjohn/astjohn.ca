@@ -13,7 +13,7 @@ px      68    160    252    */
   }
 	body {
 		width: 252px;
-  	background: url(images/layout/mobile/body_narrow.jpg) no-repeat top center;
+  	background: url(../images/layout/mobile/body_narrow.jpg) no-repeat top center;
 	}
 
   #main {
@@ -34,7 +34,7 @@ px      68    160    252    */
     font-size: 25px;
   }
 	div#splash_me{
-    background: url('images/layout/mobile/portrait.png') top center no-repeat;
+    background: url('../images/layout/mobile/portrait.png') top center no-repeat;
     width: 51px;
     height: 123px;
     top: 5px;
@@ -42,7 +42,7 @@ px      68    160    252    */
     z-index: 4;
   }
   ul#words{
-    background: url('images/layout/mobile/words.png') 0px 0px no-repeat;
+    background: url('../images/layout/mobile/words.png') 0px 0px no-repeat;
     left: 5px;
     width: 200px;
     height: 123px;
@@ -94,7 +94,7 @@ px      68    160    252    */
   footer.layout {
     margin-top: -38px;
     height: 38px;
-    background: url('images/layout/mobile/footer_narrow.jpg') top center no-repeat;
+    background: url('../images/layout/mobile/footer_narrow.jpg') top center no-repeat;
   }
   footer.layout div.social_media{
     width: 100px;
@@ -131,7 +131,7 @@ px      68    160    252    344    436    */
 
 	body {
 		width: 480px;
-  	background: url(images/layout/mobile/body.jpg) no-repeat top center;
+  	background: url(../images/layout/mobile/body.jpg) no-repeat top center;
 	}
 
   #main {
@@ -156,7 +156,7 @@ px      68    160    252    344    436    */
    * SPLASH
    */
   div#splash_me{
-    background: url('images/layout/mobile/portrait.png') top center no-repeat;
+    background: url('../images/layout/mobile/portrait.png') top center no-repeat;
     width: 51px;
     height: 123px;
     top: 10px;
@@ -164,7 +164,7 @@ px      68    160    252    344    436    */
     z-index: 4;
   }
   ul#words{
-    background: url('images/layout/mobile/words.png') 0px 0px no-repeat;
+    background: url('../images/layout/mobile/words.png') 0px 0px no-repeat;
     left: 80px;
     width: 200px;
     height: 123px;
@@ -216,7 +216,7 @@ px      68    160    252    344    436    */
   footer.layout {
     margin-top: -72px;
     height: 72px;
-    background: url('images/layout/mobile/footer.jpg') top center no-repeat;
+    background: url('../images/layout/mobile/footer.jpg') top center no-repeat;
   }
   footer.layout div.social_media{
     width: 100px;

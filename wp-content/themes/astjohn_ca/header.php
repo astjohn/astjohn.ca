@@ -5,8 +5,8 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @subpackage Astjohn.ca
+ * @since Astjohn.ca 1.0
  */
 ?>
 
@@ -53,7 +53,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/stylesheets/style.css" />
+
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/stylesheets/syntaxHighlighter/styles/shCore.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/stylesheets/syntaxHighlighter/styles/shThemeDefault.css" />
+
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.7.1.min.js"></script>

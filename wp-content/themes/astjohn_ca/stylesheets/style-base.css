@@ -125,15 +125,15 @@ button {width: auto; overflow: visible;}
  */
 @font-face {
   font-family: "Allan";
-  src: url(fonts/Allan-Bold.ttf) format("truetype");
+  src: url(../fonts/Allan-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "ShadowsIntoLight";
-  src: url(fonts/ShadowsIntoLight.ttf) format("truetype");
+  src: url(../fonts/ShadowsIntoLight.ttf) format("truetype");
 }
 @font-face {
   font-family: "Rancho";
-  src: url(fonts/Rancho-Regular.ttf) format("truetype");
+  src: url(../fonts/Rancho-Regular.ttf) format("truetype");
 }
 
 

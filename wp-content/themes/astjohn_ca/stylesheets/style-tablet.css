@@ -10,7 +10,7 @@ px      68    160    252    344    436    528    620    712    */
 
 	body {
 		width: 712px;
-  	background: url(images/layout/tablet/body.jpg) no-repeat top center;
+  	background: url(../images/layout/tablet/body.jpg) no-repeat top center;
 	}
 
   #main {
@@ -35,14 +35,14 @@ px      68    160    252    344    436    528    620    712    */
    * SPLASH
    */
   div#splash_me{
-    background: url('images/layout/tablet/portrait.png') top center no-repeat;
+    background: url('../images/layout/tablet/portrait.png') top center no-repeat;
     width: 137px;
     height: 331px;
     left: -10px;
     z-index: 4;
   }
   ul#words{
-    background: url('images/layout/tablet/words.png') 0px -10px no-repeat;
+    background: url('../images/layout/tablet/words.png') 0px -10px no-repeat;
     left: 15px;
     width: 530px;
     height: 325px;
@@ -53,7 +53,7 @@ px      68    160    252    344    436    528    620    712    */
       height: 50px;
     }
     div.menu_photo:hover{
-      background: url('images/layout/tablet/words.png') 0px -338px no-repeat;
+      background: url('../images/layout/tablet/words.png') 0px -338px no-repeat;
     }
     div.menu_blog,
     li.menu_blog{
@@ -64,7 +64,7 @@ px      68    160    252    344    436    528    620    712    */
       left: 150px;
     }
     li.menu_blog:hover{
-      background: url('images/layout/tablet/words.png') -150px -388px no-repeat;
+      background: url('../images/layout/tablet/words.png') -150px -388px no-repeat;
     }
     div.menu_web,
     li.menu_web{
@@ -75,7 +75,7 @@ px      68    160    252    344    436    528    620    712    */
       left: 20px;
     }
     li.menu_web:hover{
-      background: url('images/layout/tablet/words.png') -20px -519px no-repeat;
+      background: url('../images/layout/tablet/words.png') -20px -519px no-repeat;
     }
     li.menu_travel,
     div.menu_travel{
@@ -88,7 +88,7 @@ px      68    160    252    344    436    528    620    712    */
       z-index: 4;
     }
     li.menu_travel:hover{
-      background: url('images/layout/tablet/words.png') -180px -668px no-repeat;
+      background: url('../images/layout/tablet/words.png') -180px -668px no-repeat;
     }
   /**
    * FOOTER
@@ -96,7 +96,7 @@ px      68    160    252    344    436    528    620    712    */
   footer.layout {
     margin-top: -107px;
     height: 107px;
-    background: url('images/layout/tablet/footer.jpg') top center no-repeat;
+    background: url('../images/layout/tablet/footer.jpg') top center no-repeat;
   }
   footer.layout div.social_media{
     width: 215px;
